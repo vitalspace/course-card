@@ -19,6 +19,7 @@
       width: 15em;
       background: white;
       color: #242a4e;
+      box-shadow: 0 5px 1px #cddbf2;
 
       & header {
         background-image: url("https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tfGVufDB8fDB8fHww&w=1000&q=80");
@@ -26,6 +27,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 1em;
+        box-shadow: 0 5px 10px #d3d2ff;
       }
 
       & main {
@@ -74,10 +76,9 @@
             &:hover {
               background: #9693f9;
               border-bottom: 2px solid #6565ec;
-              
             }
           }
-          
+
           > button:nth-child(2) {
             background: #e9e8fe;
             color: #8785fe;
