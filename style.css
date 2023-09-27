@@ -1,0 +1,119 @@
+* {
+  margin: 0%;
+  padding: 0%;
+
+  .container {
+    display: grid;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: #f5f7fc;
+    font-family: sans-serif;
+
+    & article {
+      padding: 2em;
+      border-radius: 1em;
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      width: 15em;
+      background: white;
+      color: #242a4e;
+
+      & header {
+        background-image: url("https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tfGVufDB8fDB8fHww&w=1000&q=80");
+        height: 10em;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 1em;
+      }
+
+      & main {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        > section:nth-child(1) {
+          display: flex;
+          place-items: center;
+          gap: 0.5em;
+
+          & h1 {
+            font-weight: 900;
+            font-size: x-large;
+          }
+
+          & span {
+            background: rgb(136, 227, 136);
+            padding: 0.2em 0.5em;
+            border-radius: 0.2em;
+            color: white;
+          }
+        }
+
+        > section:nth-child(2) {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5em;
+          text-align: center;
+
+          & button {
+            padding: 1em;
+            border: none;
+            border-radius: 0.2em;
+            background: none;
+            cursor: pointer;
+          }
+
+          > button:nth-child(1) {
+            background: #6f6bfe;
+            color: white;
+            border-bottom: 2px solid #3c3be3;
+            transition: all 0.3s;
+
+            &:hover {
+              background: #9693f9;
+              border-bottom: 2px solid #6565ec;
+              
+            }
+          }
+          
+          > button:nth-child(2) {
+            background: #e9e8fe;
+            color: #8785fe;
+            transition: all 0.3s;
+            border-bottom: 2px solid transparent;
+
+            &:hover {
+              color: white;
+              background: #65e7c4;
+              border-bottom: 2px solid #6cde8a;
+            }
+          }
+
+          & p {
+            font-size: 12px;
+          }
+        }
+      }
+
+      & footer {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+
+        & h2 {
+          font-size: medium;
+        }
+
+        > ul {
+          padding-left: 1em;
+
+          & li {
+            font-size: small;
+          }
+        }
+      }
+    }
+  }
+}
